@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 function Modal(props) {
   const [name, setName] = useState("");
