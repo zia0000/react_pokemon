@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 
-:root {
+/*:root {
   --mint: #9ddfd3;
   --coral: #fd9795;
   --beige: #e1cfbd;
-}
+}*/
 
 header {
   font-size: 1.7rem;
-  background-color: paleturquoise;
+  background-image: url("/public/images/pixelwallpaper.jpeg");
   display: flex;
   height: 50px;
   justify-content: center;
