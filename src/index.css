@@ -86,37 +86,6 @@ main {
   text-align: center;
   word-break: break-all;
 }
-/*
-.add-button {
-  padding: 7px 10px;
-  background: black;
-  color: var(--coral);
-  border-radius: 10px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.add-button:hover {
-  background: var(--purple);
-  color: black;
-}
-
-.submit-button {
-  padding: 7px 10px;
-  background: var(--orange);
-  color: black;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  border: none;
-  margin-top: 20px;
-}
-
-.submit-button:hover {
-  background: var(--blue);
-}
-*/
 
 /*new one starts right here*/
 
@@ -177,7 +146,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(155, 152, 152, 0.7);
+  background-color: rgba(245, 222, 160, 0.7);
   z-index: 10;
 }
 
