@@ -111,7 +111,7 @@ function App() {
               setModalOpen(true);
             }}
           >
-            PokeBall
+            ADD
           </button>
           {mode.map((item) => (
             <span key={item.name}>{item.name}</span>
@@ -121,6 +121,7 @@ function App() {
           {mode.map((item) => (
             <section className="mode" key={item.name}>
               <img src={item.img} alt={item.name}></img>
+              <span>{item.content}</span>
             </section>
           ))}
         </article>

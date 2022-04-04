@@ -1,28 +1,9 @@
-@font-face {
-  font-family: "Cafe24Ohsquareair";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 
 :root {
   --mint: #9ddfd3;
   --coral: #fd9795;
   --beige: #e1cfbd;
-}
-
-html,
-body,
-#root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-}
-
-body {
-  padding: 10px;
 }
 
 header {
@@ -38,7 +19,7 @@ header {
 
 * {
   box-sizing: border-box;
-  font-family: "Cafe24Ohsquareair";
+  font-family: "Comfortaa", cursive;
 }
 
 .title {
