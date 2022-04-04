@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 function Modal(props) {
   const [name, setName] = useState("");
@@ -13,16 +12,16 @@ function Modal(props) {
         onSubmit={(event) => {
           event.preventDefault();
           props.onCreate({ name, content, img });
-          props.setModelOpen(false);
+          props.setIsModalOpen(false);
         }}
       >
-        <span className="modal-close" onClick={() => props.setModalOpen(false)}>
+        <span className="modal-close" onClick={() => props.setIsModalOpen(false)}>
           ❌
         </span>
         <label htmlFor="name" className="label">
           Name
         </label>
-        <imput
+        <input
           id="name"
           type="text"
           placeholder="What kinda Pokémon?"
@@ -37,7 +36,7 @@ function Modal(props) {
         <label htmlFor="content" className="label">
           say something
         </label>
-        <imput
+        <input
           id="content"
           type="text"
           placeholder="about this pic.."
@@ -52,7 +51,7 @@ function Modal(props) {
         <label htmlFor="img" className="label">
           img
         </label>
-        <imput
+        <input
           id="img"
           type="text"
           placeholder="URL"
@@ -95,7 +94,7 @@ function App() {
     },
   ]);
 
-  const [ModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
@@ -108,7 +107,7 @@ function App() {
             type="button"
             className="add-button"
             onClick={() => {
-              setModalOpen(true);
+              setIsModalOpen(true);
             }}
           >
             ADD
@@ -128,10 +127,10 @@ function App() {
       </main>
       <Modal
         onCreate={(item) => {
-          setMode([...setMode, item]);
+          setMode([...mode, item]);
         }}
-        ModalOpen={ModalOpen}
-        setModalOpen={setModalOpen}
+        ModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
       ></Modal>
     </>
   );
