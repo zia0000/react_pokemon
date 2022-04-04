@@ -127,7 +127,7 @@ function App() {
       </main>
       <Modal
         onCreate={(item) => {
-          setMode([...setMode, item]);
+          setMode([...mode, item]);
         }}
         ModalOpen={isModalOpen}
         setModalOpen={setIsModalOpen}
