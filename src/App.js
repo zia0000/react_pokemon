@@ -6,7 +6,7 @@ function Modal(props) {
   const [img, setImg] = useState("");
 
   return (
-    <div className="modal-background" hidden={!props.ModalOpen}>
+    <div className="modal-background" hidden={!props.isModalOpen}>
       <form
         className="modal"
         onSubmit={(event) => {
@@ -74,7 +74,7 @@ function Modal(props) {
 }
 
 function App() {
-  const [mode, setMode] = useState([
+  const [card, setCard] = useState([
     {
       name: "Pikachu",
       content: "nap time💤",
@@ -115,13 +115,13 @@ function App() {
           >
             ADD
           </button>
-          {mode.map((item) => (
+          {card.map((item) => (
             <span key={item.name}>{item.name}</span>
           ))}
         </div>
         <article className="article">
-          {mode.map((item) => (
-            <section className="mode" key={item.name}>
+          {card.map((item) => (
+            <section className="section" key={item.name}>
               <img src={item.img} alt={item.name}></img>
               <span>{item.content}</span>
             </section>
@@ -130,9 +130,9 @@ function App() {
       </main>
       <Modal
         onCreate={(item) => {
-          setMode([...mode, item]);
+          setCard([...card, item]);
         }}
-        ModalOpen={isModalOpen}
+        isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
       ></Modal>
     </>

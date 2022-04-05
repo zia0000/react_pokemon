@@ -8,7 +8,7 @@
 :root {
   --blue: #63BCC9
   --purple: #CDB3D4
-  --orange: FFBE88
+  --orange: #FFBE88
 }
 
 header {
@@ -64,7 +64,7 @@ main {
   overflow-y: scroll;
 }
 
-.mode{
+.card{
   display: flex;
   flex-flow: wrap;
   width: 200px;
@@ -73,7 +73,12 @@ main {
   margin: 10px;
   background-color: #f696cb; /*var(--orange); 는 왜안되는지 모르겠음..*/
   border-radius: 10px;
-}ㄴ
+}
+
+.card > span { 
+  text-align: center; 
+  word-break: break-all; 
+}
 
 img {
   width: 180px;
@@ -191,13 +196,17 @@ img {
 }
 
 @media (max-width: 1000px) {
-  .card {
-    background: var(--purple);
+  .section {
+    background: white;
   }
 }
 
 @media (max-width: 700px) {
-  .card {
+  .section {
     background: var(--blue);
   }
 }
+
+.section> img { width: 100%; height: auto; object-fit: contain; margin-bottom: 10px; }
+
+
