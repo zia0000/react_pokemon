@@ -12,10 +12,13 @@ function Modal(props) {
         onSubmit={(event) => {
           event.preventDefault();
           props.onCreate({ name, content, img });
-          props.setModelOpen(false);
+          props.setIsModelOpen(false);
         }}
       >
-        <span className="modal-close" onClick={() => props.setModalOpen(false)}>
+        <span
+          className="modal-close"
+          onClick={() => props.seIstModalOpen(false)}
+        >
           ❌
         </span>
         <label htmlFor="name" className="label">
@@ -127,10 +130,10 @@ function App() {
       </main>
       <Modal
         onCreate={(item) => {
-          setMode([...setMode, item]);
+          setMode([...mode, item]);
         }}
         ModalOpen={isModalOpen}
-        setModalOpen={setIsModalOpen}
+        setIsModalOpen={setIsModalOpen}
       ></Modal>
     </>
   );
