@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 function Modal(props) {
   const [name, setName] = useState("");
@@ -22,7 +21,7 @@ function Modal(props) {
         <label htmlFor="name" className="label">
           Name
         </label>
-        <imput
+        <input
           id="name"
           type="text"
           placeholder="What kinda Pokémon?"
@@ -37,7 +36,7 @@ function Modal(props) {
         <label htmlFor="content" className="label">
           say something
         </label>
-        <imput
+        <input
           id="content"
           type="text"
           placeholder="about this pic.."
@@ -52,7 +51,7 @@ function Modal(props) {
         <label htmlFor="img" className="label">
           img
         </label>
-        <imput
+        <input
           id="img"
           type="text"
           placeholder="URL"
