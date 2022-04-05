@@ -94,7 +94,7 @@ function App() {
     },
   ]);
 
-  const [ModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <>
@@ -107,7 +107,7 @@ function App() {
             type="button"
             className="add-button"
             onClick={() => {
-              setModalOpen(true);
+              setIsModalOpen(true);
             }}
           >
             ADD
@@ -129,8 +129,8 @@ function App() {
         onCreate={(item) => {
           setMode([...setMode, item]);
         }}
-        ModalOpen={ModalOpen}
-        setModalOpen={setModalOpen}
+        ModalOpen={isModalOpen}
+        setModalOpen={setIsModalOpen}
       ></Modal>
     </>
   );
