@@ -64,29 +64,6 @@ main {
   overflow-y: scroll;
 }
 
-/*.mode {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 200px;
-  min-height: 150px;
-  padding: 10px;
-  background-color: var(--orange);
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.mode > img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.mode > span {
-  text-align: center;
-  word-break: break-all;
-}*/
-
 .mode{
   display: flex;
   flex-flow: wrap;
@@ -96,7 +73,7 @@ main {
   margin: 10px;
   background-color: #f696cb; /*var(--orange); 는 왜안되는지 모르겠음..*/
   border-radius: 10px;
-}
+}ㄴ
 
 img {
   width: 180px;
